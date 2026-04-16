@@ -482,26 +482,26 @@
       <div class="about-text reveal">
         <p class="section-label">// About Me</p>
         <h2 class="section-title">Who I Am</h2>
-        <p>I'm <span>Thivekshan</span>, a passionate Computer Systems Engineering student originally from <span>Sri Lanka</span>, currently in my final year at the <span>University of Sunderland</span>, UK.</p>
-        <p>My journey started with learning <span>C, Java and Python</span>, building my first Android game, then progressing to full-stack web development with the <span>MERN stack</span>. Now I'm diving deep into <span>AI and data technologies</span>.</p>
-        <p>I'm actively seeking <span>graduate roles and internships</span> in software engineering, systems development, and AI — ready to bring real value from day one.</p>
+        <p>I'm <span>Thivekshan Rajakumar</span>, a passionate Computer Systems Engineering student originally from <span>Sri Lanka</span>, currently in my final year at the <span>University of Sunderland</span>, UK — on track for a <span>First Class degree</span>.</p>
+        <p>My journey started with learning <span>C, Java and Python</span>, building my first Android game from scratch, then progressing to full-stack web development with the <span>MERN stack</span>. I have since completed a <span>Data Analytics certificate</span>, earned my <span>AWS Cloud Practitioner</span> certification, and am now building real-world <span>AI and computer vision systems</span> using PyTorch and TensorFlow for my final year project.</p>
+        <p>I am a curious, self-driven builder who loves solving real problems with technology. I have <span>3 years of freelance web development</span> experience and have built and deployed multiple projects independently. I am actively seeking <span>graduate roles and internships</span> in software engineering, AI and data — ready to bring real value from day one.</p>
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-num">3+</div>
+          <div class="stat-num">5+</div>
           <div class="stat-label">Programming Languages</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">4+</div>
+          <div class="stat-num">5+</div>
           <div class="stat-label">Projects Built</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">2025</div>
+          <div class="stat-num">2026</div>
           <div class="stat-label">Graduate Year</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">UK</div>
-          <div class="stat-label">Graduate Route Visa</div>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Certificates Earned</div>
         </div>
       </div>
     </div>
@@ -561,38 +561,42 @@
       <div class="project-card reveal">
         <div class="project-num">01</div>
         <h3 class="project-title">Flappy Bird Android Game</h3>
-        <p class="project-desc">A fully functional Flappy Bird clone built for Android. My first mobile development project — designed the game logic, physics, and UI entirely from scratch.</p>
+        <p class="project-desc">A fully functional Flappy Bird clone built natively for Android using Java and Android Studio. Designed and implemented game physics, collision detection, score tracking, and a complete UI from scratch — demonstrating core mobile development and object-oriented programming skills.</p>
         <div class="project-tech">
           <span>Java</span>
           <span>Android Studio</span>
           <span>XML</span>
+          <span>OOP</span>
         </div>
-        <a href="https://github.com" class="project-link">View on GitHub →</a>
+        <a href="https://github.com/thivekshan-engineer" class="project-link" target="_blank">View on GitHub →</a>
       </div>
 
       <div class="project-card reveal">
         <div class="project-num">02</div>
-        <h3 class="project-title">Personal Website</h3>
-        <p class="project-desc">A responsive personal website built from scratch using pure HTML, CSS and JavaScript — showcasing my early front-end development skills.</p>
+        <h3 class="project-title">Personal Portfolio Website</h3>
+        <p class="project-desc">A fully responsive personal portfolio website built from scratch using pure HTML, CSS and JavaScript — no frameworks. Features smooth scroll animations, a custom cursor, interactive sections and is deployed live using GitHub Pages. Currently the site you are viewing!</p>
         <div class="project-tech">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
+          <span>GitHub Pages</span>
         </div>
-        <a href="https://github.com" class="project-link">View on GitHub →</a>
+        <a href="https://github.com/thivekshan-engineer/personal-website-" class="project-link" target="_blank">View on GitHub →</a>
       </div>
 
       <div class="project-card reveal">
         <div class="project-num">03</div>
         <h3 class="project-title">MERN Stack Web Application</h3>
-        <p class="project-desc">A full-stack web application built using the MERN stack. Includes user authentication, a REST API backend, and a dynamic React frontend with MongoDB database.</p>
+        <p class="project-desc">A full-stack web application built using the MERN stack. Features include user authentication with JWT tokens, a RESTful API backend built with Express and Node.js, a dynamic React frontend with component-based architecture, and a MongoDB database for persistent data storage.</p>
         <div class="project-tech">
           <span>MongoDB</span>
           <span>Express</span>
           <span>React</span>
           <span>Node.js</span>
+          <span>JWT</span>
+          <span>REST API</span>
         </div>
-        <a href="https://github.com" class="project-link">View on GitHub →</a>
+        <a href="https://github.com/thivekshan-engineer" class="project-link" target="_blank">View on GitHub →</a>
       </div>
 
       <div class="project-card reveal">
@@ -666,4 +670,11 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach((e, i) => {
         if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
